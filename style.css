@@ -1,0 +1,128 @@
+
+body {
+    margin: 0;
+    padding: 0 20px;
+    font-family: Arial, "Trebuchet MS", sans-serif;
+    color: #202122;
+}
+
+.blue { color: blue; }
+
+
+.head h2 { 
+    font-size: 35px; margin: 16px 0 0; 
+}
+.head .sub { 
+    font-size: 12px; margin: 0 0 6px 40px;
+ }
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+.box1 {
+    width: 250px;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+.link {
+    display: block;
+    margin: 0 0 18px 20px;
+    text-decoration: none;
+    color: #0645ad;
+}
+
+
+.box2 {
+    flex: 1;
+    min-width: 0;
+}
+.box2 h1 { 
+    margin: 10px 0 4px 15px;
+ }
+.tabs {
+     font-size: larger; 
+     margin: 8px 0 8px 10px; 
+    }
+.tabs a { 
+    text-decoration: none; 
+    margin-left: 10px; 
+    color: #0645ad; 
+}
+.from { 
+    margin: 8px 0 8px 10px;
+ }
+
+.para {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 12px 10px;
+}
+
+
+.box3 {
+    width: 340px;
+    flex-shrink: 0;
+    border: 2px solid;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.photo { 
+    text-align: center;
+     padding: 10px 0; 
+    }
+.photo img {
+    border: 2px solid;
+    width: 310px;
+    height: 400px;
+    object-fit: cover;
+}
+.modi-img {
+    width: 310px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaecf0;
+    color: #54595d;
+}
+.name { 
+    text-align: center; 
+    font-size: larger; 
+    margin: 6px 0; 
+}
+.highlight {
+    background-color: aqua;
+    text-align: center;
+    font-size: large;
+    margin: 10px 0 6px;
+    padding: 2px 0;
+}
+.box3 table { 
+    width: 100%; 
+    border-collapse: collapse; 
+}
+.box3 td { 
+    vertical-align: top; 
+    padding: 4px 10px;
+ }
+.box3 td.val { 
+    opacity: 0.7; text-align: right; 
+}
+
+
+@media (max-width: 1000px) {
+    .boxparents { 
+        flex-direction: column; 
+    }
+    .box1, .box3 { 
+        width: 100%; 
+    }
+}
